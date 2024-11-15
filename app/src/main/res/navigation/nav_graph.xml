@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/question1">
+
+    <fragment
+        android:id="@+id/question1"
+        android:name="com.example.mysampleapp.Question1"
+        android:label="fragment_question1"
+        tools:layout="@layout/fragment_question1" >
+        <action
+            android:id="@+id/action_question1_to_question2"
+            app:destination="@id/question2" />
+    </fragment>
+    <fragment
+        android:id="@+id/question2"
+        android:name="com.example.mysampleapp.Question2"
+        android:label="fragment_question2"
+        tools:layout="@layout/fragment_question2" >
+        <action
+            android:id="@+id/action_question2_to_question3"
+            app:destination="@id/question3" />
+    </fragment>
+    <fragment
+        android:id="@+id/question3"
+        android:name="com.example.mysampleapp.Question3"
+        android:label="fragment_question3"
+        tools:layout="@layout/fragment_question3" >
+        <action
+            android:id="@+id/action_question3_to_submit"
+            app:destination="@id/submit" />
+    </fragment>
+    <fragment
+        android:id="@+id/submit"
+        android:name="com.example.mysampleapp.Submit"
+        android:label="fragment_submit"
+        tools:layout="@layout/fragment_submit" >
+        <action
+            android:id="@+id/action_submit_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.mysampleapp.Result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_result_to_question1"
+            app:destination="@id/question1" />
+    </fragment>
+</navigation>

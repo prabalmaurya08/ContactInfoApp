@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MySampleApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MySampleApp" parent="Base.Theme.MySampleApp" />
+
+    <!--    THis is for Doctor login page Button style-->
+    <style name="buttonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/blue</item>
+
+        <item name="shapeAppearanceOverlay">@style/CustomButtonShape1</item>
+
+    </style>
+
+    <style name="CustomButtonShape1" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+        <item name="android:height">50dp</item>
+    </style>
+</resources>
